@@ -1,0 +1,167 @@
+html {
+	box-sizing: border-box;
+	font-family: 'Source Serif Pro', serif;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/*-----Header Section------*/
+
+.header-banner {
+	margin: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+}
+.home {
+	background: url("../images/landing_page_banner.jpg") no-repeat scroll;
+  background-size: 100% 100%;
+  background-position: center;
+  margin-top: 0;
+	height: 100%;
+	width: 100%;
+}
+.header-title {
+	padding-top: 300px;
+	padding-bottom: 50px;
+	margin: 0 200px 300px 200px;
+	position: relative;
+	overflow: auto;
+	text-align: center;
+}
+.home-title {
+	font-family: 'Hind', sans-serif;
+	font-weight: 500;
+	font-size: 36px;
+	color: white;
+  vertical-align: middle;
+  overflow: auto;
+  margin-bottom: 0;
+}
+.header-horizontal-line {
+	color: white;
+	width: 500px;
+	border-width: 1px;
+	border-style: solid;
+	margin-bottom: 35px;
+}
+.start-today-btn {
+	font-family: 'Hind', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	color: white;
+	text-decoration: none;
+	padding: 8px 50px;
+	border: solid white;
+	border-width: 1px;
+	border-radius: 2px;
+}
+.start-today-btn:hover {
+	color: #fff;
+	border: solid #fff;
+	border-width: 1px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 50px #fff inset;
+}
+
+/*------Main Section-----*/
+
+.home-grid {
+	display: grid;
+	grid-template-columns: 30% 20% 20% 20%;
+	color: #3F3F3F;
+	justify-content: center;
+	margin: 880px auto 90px auto;
+}
+.home-grid-primary-column {
+	text-align: right;
+	padding: 25px 50px 25px 0;
+	border-right: solid #3F3F3F;
+	border-width: 1px;
+}
+.second-title {
+	font-size: 24px;
+	font-weight: 400;
+}
+.subtitle {
+	font-size: 16px;
+}
+.home-grid-secondary-column {
+	text-align: center;
+	padding-top: 30px;
+}
+.specialties {
+	font-size: 21px;
+}
+.home-icons {
+	width: 40px;
+}
+
+/*-----Media Queries-----*/
+
+
+/*Widescreen*/
+@media only screen and (min-width: 1520px) {
+  #center-content {
+	 	max-width: 1500px;
+		align-content: center;
+		margin: 1em auto; 
+	}
+	.header-banner {
+		left: auto;
+		position: absolute;
+		max-width: 1500px;
+	}
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+ .home-title {
+		font-size: 32px;
+	}
+	.start-today-btn {
+		font-size: 21px;
+		padding: 8px 45px;
+	}
+	.header-title {
+		padding-top: 280px;
+    margin: 0 100px 230px 100px;
+	} 
+	.header-horizontal-line {
+		width: 400px;
+	}
+	.home-grid {
+		margin: 750px auto 40px auto;
+	}
+	.home-grid-primary-column {
+		padding: 10px 10px 10px 0;
+	}
+	.home-grid-secondary-column {
+    padding-top: 20px;
+	}
+	.second-title {
+		font-size: 21px;
+		font-weight: 400;
+		margin-bottom: 0;
+		margin-top: 30px;
+	}
+	.subtitle {
+		margin-top: 0;
+		font-size: 14px;
+	}
+	.specialties {
+		font-size: 16px;
+	}
+	.home-icons {
+		width: 28px;
+	}
+}
+
+
+
+
+
+
+
+
