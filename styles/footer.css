@@ -1,14 +1,17 @@
+.footer-background {
+	background-color: #3F3F3F;
+}
+
 .footer-grid {
 	display: grid;
 	grid-template-columns: 33% 33% 33%;
 	width: 100%;
 	text-align: center;
-	background: #3F3F3F;
 	color: #fff;
 	padding: 5% 0 5% 0;
-	position: absolute;
   left: 0;
   justify-content: center;
+  margin: auto;
 }
 .footer-title {
 	font-size: 21px;
@@ -45,11 +48,23 @@
 
 
 /*Widescreen*/
-@media only screen and (min-width: 1520px) {
-	.footer-grid {
-		position: relative;
-	  left: auto;
+@media only screen and (min-width: 1440px) {
+
+}
+
+@media only screen and (min-width: 1600px) {
+	.footer-title {
+		font-size: 26px;
+		font-weight: 600;
 	}
+	.footer-text {
+		font-size: 21px;
+		font-weight: 400;
+		line-height: 33px;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
 }
 @media screen and (max-width: 900px) and (min-width: 600px) {
 	.footer-grid {
@@ -64,6 +79,25 @@
 	.footer-text {
 		font-size: 14px;
 		line-height: 24px;
+	}
+
+
+}
+
+@media screen and (max-width: 599px) and (min-width: 320px) {
+	.footer-grid {
+		grid-template-columns: 100%;
+		grid-gap: 10%;
+		padding: 15% 0 35% 0;
+	}
+
+	.footer-title {
+		font-size: 21px;
+	}
+
+	.footer-text {
+		font-size: 18px;
+		line-height: 30px;
 	}
 
 

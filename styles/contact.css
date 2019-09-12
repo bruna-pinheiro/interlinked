@@ -1,0 +1,50 @@
+.contact-subtitle {
+	font-size: 21px;
+	text-align: center;
+	color: #3F3F3F;
+	margin-top: 0;
+}
+.contact-header-title-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+.contact-grid-column1 {
+	text-align: left;
+
+}
+.regular-text {
+	color: #3F3F3F;
+}
+
+.contact-grid-column2 {
+	text-align: right;
+	vertical-align: middle;
+	padding-top: 7%;
+	padding-bottom: 7%;
+	color: #3F3F3F;
+}
+
+.contact-map {
+	margin: 0 8% 10% 8%;
+	border-style: solid;
+	padding: 24%;
+}
+
+
+@media screen and (min-width: 1600px) {
+	.contact-header-title-grid {
+		margin: auto;
+	}
+	.contact-map {
+		margin: 0 auto 10% auto;
+	}
+	.contact-grid-column1 {
+		font-size: 23px;
+	}
+	.contact-grid-column2 {
+		font-size: 23px;
+	}
+
+}
