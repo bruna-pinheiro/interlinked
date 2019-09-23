@@ -48,3 +48,22 @@
 	}
 
 }
+@media screen and (max-width: 767px) and (min-width: 320px) {
+	.contact-header-title-grid {
+		display: grid;
+		grid-template-columns: 100%;
+		margin-left: 8%;
+		margin-right: 8%;
+	}
+	.contact-grid-column1 {
+		text-align: center;
+	}
+	.contact-grid-column2 {
+		text-align: center;
+	}
+	.contact-map {
+    margin: 0 0 20% 0;
+	}
+
+
+}

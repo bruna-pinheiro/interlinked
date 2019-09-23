@@ -23,11 +23,19 @@
 	text-indent: 30px;
 }
 .services-img-01 {
+	display: block;
 	width: 360px;
 	vertical-align: middle;
 	position: absolute;
 	right: -265px;
-	bottom: 41px;
+	bottom: 50%;
+	margin-bottom: -245px;
+}
+.services-img-01-tablet {
+	display: none;
+}
+.services-img-01-mobile {
+	display: none;
 }
 .alert-text {
 	font-size: 24px;
@@ -150,29 +158,115 @@
 	font-size: 16px;
 
 }
-@media screen and (max-width: 1599px) and (min-width: 1440px) {
-	/*.text-box-wrap {
+
+@media screen and (min-width: 1600px) {
+	.center-content {
+	 	max-width: 1500px;
+		align-content: center;
+	}
+	.text-box-wrap {
 		margin: auto;
+	}
+	.main-text-box {
+    padding: 5% 12% 5% 5%;
+    margin-right: 26%;
+    margin-left: 8%;
+	}
+	.services-img-01 {
+    width: 391px;
+    right: -265px;
+    bottom: 50%;
+    margin-bottom: -266px;
 	}
 	.alert-text {
-		margin: 10% auto;
+		margin: 10% 12%;
 	}
 	.second-text-box {
-		margin-right: 32%;
-		margin-left: 35%;
+		margin-right: 10%;
+		margin-left: 23%;
+		padding: 3% 5% 3% 10%;
+	}
+	.services-img-02 {
+		width: 294px;
+		left: -186px;
 	}
 	.prices-grid {
-		margin: auto;
+    grid-template-columns: 25% 25% 25%;
+    grid-gap: 5%;
+    justify-content: center;
+    margin: auto;
 	}
 	.payment-options-grid {
-		margin: 10% auto 5% auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10% 7% 10% 7%;
 	}
 	.services-list-wrap {
 		margin: auto;
 
-	}*/
+	}
+	.main-text-title {
+		font-size: 24px;
+	}
+	.main-text {
+		font-size: 20px;
+		line-height: 33px;
+	}
+	.alert-text {
+		font-size: 32px;
+		line-height: 48px;
+	}
+	.second-text {
+		font-size: 20px;
+		line-height: 33px;
+	}
+	.list-title {
+		margin-top: 10%;
+		font-size: 28px;
+	}
+	.services-list-items {   
+	  font-size: 20px;
+	} 
+	.list-settings {  
+	  margin-left: 35%;  
+	}
+	.prices-grid-title {
+		margin-top: 6%;
+		font-size: 28px;
+	}
+	.prices-grid-text {
+		font-size: 24px;
+	}
+	.payment-options-title {
+		font-size: 21px;
+		line-height: 28px;
+	}
+	.payment-options-text {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.insurance {
+		font-size: 20px;
+	}
+
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1440px) {
+	.main-text-box {
+		padding: 5% 12% 5% 5%;
+		margin-right: 27%;
+		margin-left: 8%;
+	}
 	.services-img-01 {
-		width: 410px;
+		width: 390px;
+		right: -265px;
+    bottom: 50%;
+    margin-bottom: -266px;
+	}
+	.second-text-box {
+    padding: 3% 5% 3% 12%;
+    margin-right: 13%;
+    margin-left: 24%;
 	}
 	.services-img-02 {
 		width: 323px;
@@ -224,81 +318,246 @@
 		font-size: 20px;
 
 	}
+}
+
+
+@media screen and (max-width: 1439px) and (min-width: 1070px) {
+	.services-img-01 {
+		width: 305px;
+		right: -236px;
+    bottom: 50%;
+    margin-bottom: -208px;
+	}
+		.main-text-box {
+		text-align: justify;
+		padding: 5% 12% 5% 5%;
+		margin-right: 28%;
+		margin-left: 8%;
+	}
+	.second-text-box {
+    text-align: justify;
+    padding: 3% 5% 3% 12%;
+    margin-right: 15%;
+    margin-left: 24%;
+  }
+  .services-img-02 {
+		width: 224px;
+		left: -128px;
+		bottom: 50%;
+		margin-bottom: -118px;
+	}
 
 }
-@media screen and (min-width: 1600px) {
-	.text-box-wrap {
-		margin: auto;
+
+@media screen and (max-width: 860px) and (min-width: 768px) {
+	.main-text-box {
+    padding: 5% 10% 5% 8%;
+    margin-right: 31%;
+    margin-left: 0;
 	}
-	.alert-text {
-		margin: 10% auto;
+	.services-img-01 {
+		display: none;
+	}
+	.services-img-01-tablet {
+		display: block;
+		width: 295px;
+		vertical-align: middle;
+		position: absolute;
+		right: -238px;
+		bottom: 50%;
+		margin-bottom: -226px;
 	}
 	.second-text-box {
-		margin-right: 32%;
-		margin-left: 35%;
+    margin-right: 0; 
+    margin-left: 20%;
+    padding: 3% 6% 3% 15%;
+	}
+	.list-settings {
+    margin-left: 25%;
+	}
+	.prices-grid-columns {
+    padding: 18px;
+	}
 
-	}
-	.prices-grid {
-		margin: auto;
-	}
-	.payment-options-grid {
-		margin: 10% auto 5% auto;
-	}
-	.services-list-wrap {
-		margin: auto;
+}
 
+/*@media screen and (max-width: 900px) and (min-width: 600px) {
+	.main-text-box {
+    padding: 5% 12% 5% 5%;
+    margin-right: 34%;
+    margin-left: 0;
 	}
-	.main-text-title {
-		font-size: 24px;
+	.services-img-01 {
+		display: none;
 	}
-	.main-text {
-		font-size: 20px;
-		line-height: 33px;
+	.services-img-01-tablet {
+		display: block;
+		width: 324px;
+		vertical-align: middle;
+		position: absolute;
+		right: -265px;
+		bottom: 41px;
 	}
-	.alert-text {
-		font-size: 32px;
-		line-height: 48px;
+}
+*/
+@media screen and (max-width: 767px) and (min-width: 320px) {
+	.main-text-box {
+   	padding: 205px 10% 30px 10%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 280px;
 	}
-	.second-text {
-		font-size: 20px;
-		line-height: 33px;
+	.services-img-01-mobile {
+		display: block;
+    width: 295px;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    margin-left: -147px;
+    top: -188px;
+	}
+	.services-img-01 {
+		display: none;
+	}
+	.services-img-01-tablet {
+		display: none;
+	}
+	.services-img-02 {
+    width: 240px;
+    left: 50%;
+    margin-left: -120px;
+    top: -127px;
 	}
 	.second-text-box {
-		padding: 3% 5% 3% 7%;
+    margin-right: 0; 
+    margin-left: 0;
+    margin-top: 190px;
+    padding: 155px 10% 15px 10%;
+	}
+	.list-settings {
+    margin-left: 0;
+    padding-left: 18%;
+    padding-right: 10%;
+    margin-bottom: 22%;
 	}
 	.list-title {
-		margin-top: 10%;
-		font-size: 28px;
+    margin-top: 22%;
 	}
-	.services-list-items {   
-	  font-size: 20px;
-	} 
-	.list-settings {  
-	  margin-left: 35%;  
+	.prices-grid {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-gap: 5%;
+		justify-content: center;
+		margin-left: 12%;
+		margin-right: 12%;
 	}
 	.prices-grid-title {
-		margin-top: 6%;
-		font-size: 28px;
+    margin-top: 10%;
+    margin-bottom: 16%;
 	}
-	.prices-grid-text {
-		font-size: 24px;
-	}
-	.payment-options-title {
-		font-size: 21px;
-		line-height: 28px;
+	.payment-options-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 22% 7% 10% 7%;
 	}
 	.payment-options-text {
-		font-size: 20px;
-		line-height: 30px;
+		text-align: center;
+	}
+	.payment-options-title {
+		text-align: center;
+		margin-top: 10%;
+	}
+	.payment-options-grid-column1 {
+    padding: 5% 0 5% 0;
 	}
 	.insurance {
-		font-size: 20px;
-
+		text-align: center;
+		margin-top: 11%;
+		margin-bottom: 12%;
 	}
-
+}
+/*
+@media screen and (max-width: 350px) and (min-width: 320px) {
+	.main-text-box {
+   	padding: 205px 10% 30px 10%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 280px;
+	}
+	.services-img-01-mobile {
+		display: block;
+    width: 295px;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: -188px;
+	}
+	.services-img-01 {
+		display: none;
+	}
+	.services-img-01-tablet {
+		display: none;
+	}
+	.services-img-02 {
+    width: 240px;
+    left: 50%;
+    margin-left: -120px;
+    top: -127px;
+	}
+	.second-text-box {
+    margin-right: 0; 
+    margin-left: 0;
+    margin-top: 190px;
+    padding: 155px 10% 15px 10%;
+	}
+	.list-settings {
+    margin-left: 0;
+    padding-left: 18%;
+    padding-right: 10%;
+    margin-bottom: 22%;
+	}
+	.list-title {
+    margin-top: 22%;
+	}
+	.prices-grid {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-gap: 5%;
+		justify-content: center;
+		margin-left: 12%;
+		margin-right: 12%;
+	}
+	.prices-grid-title {
+    margin-top: 10%;
+    margin-bottom: 16%;
+	}
+	.payment-options-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 22% 7% 10% 7%;
+	}
+	.payment-options-text {
+		text-align: center;
+	}
+	.payment-options-title {
+		text-align: center;
+		margin-top: 10%;
+	}
+	.payment-options-grid-column1 {
+    padding: 5% 0 5% 0;
+	}
+	.insurance {
+		text-align: center;
+		margin-top: 11%;
+		margin-bottom: 12%;
+	}
 }
 
 
 
 
 
+
+
+*/
