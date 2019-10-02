@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Interlinked | Home</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Source+Serif+Pro:400,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles/home.css">
@@ -13,84 +14,102 @@
 </head>
 
 <body>
-	<!-- <div id="center-content"> -->
-		<nav class="navbar">
-			<a href="about.html" class="navbar-text">About</a>
-			<a href="services.html" class="navbar-text">Services/Fees</a>
-			<a id="home-btn" href="index.html" class="navbar-text"><img src="images/interlinked_logo.png" class="logo-img-navbar"></a>
-			<a href="contact.html" class="navbar-text">Contact</a>
-			<a href="resources.html" class="navbar-text">Resources</a>
-		</nav>
+	<nav class="navbar navbar-transparent" id="navbar">
+		<a href="about.html" class="navbar-text">About</a>
+		<a href="services.html" class="navbar-text">Services/Fees</a>
+		<a id="home-btn" href="index.html" class="navbar-text"><img src="images/interlinked_logo.png" class="logo-img-navbar"></a>
+		<a href="contact.html" class="navbar-text">Contact</a>
+		<a href="resources.html" class="navbar-text">Resources</a>
+	</nav>
 
-		<nav class="navbar-mobile">
-			<div class="dropdown">
-		    <button class="dropbtn">
-		      <i class="dropdown-icon fas fa-bars"></i>
-		    </button>
-		    <div class="dropdown-content">
-		      <a href="about.html" class="navbar-mobile-text">About</a>
-		      <a href="services.html" class="navbar-mobile-text">Services/Fees</a>
-		      <a href="contact.html" class="navbar-mobile-text">Contact</a>
-		      <a href="resources.html" class="navbar-mobile-text">Resources</a>
-		    </div>
-		  </div>
-		  <div class="home-btn"> 
-				<a href="index.html"><img src="images/interlinked_logo.png" class="logo-img-navbar-mobile"></a>
-			</div>
-			<div> 
-			</div>
-		</nav>
+	<nav class="navbar-mobile navbar-transparent" id="mobile-navbar">
+		<div class="dropdown">
+	    <button class="dropbtn">
+	      <i class="dropdown-icon fas fa-bars"></i>
+	    </button>
+	    <div class="dropdown-content">
+	      <a href="about.html" class="navbar-mobile-text">About</a>
+	      <a href="services.html" class="navbar-mobile-text">Services/Fees</a>
+	      <a href="contact.html" class="navbar-mobile-text">Contact</a>
+	      <a href="resources.html" class="navbar-mobile-text">Resources</a>
+	    </div>
+	  </div>
+	  <div class="home-btn"> 
+			<a href="index.html"><img src="images/interlinked_logo.png" class="logo-img-navbar-mobile"></a>
+		</div>
+		<div> 
+		</div>
+	</nav>
 
-		<header>
-			<section id="home" class="home">
-				<div class="header-banner">
-					<div class="header-title">
-						<h1 class="home-title">Choose to be well</h1>
-						<h1 class="home-title-mobile">Choose to be<br>well</h1>
-						<hr class="header-horizontal-line">
-						<a href="#start" class="start-today-btn">Start today</a>
-					</div>
-					
+	<header>
+		<section id="home" class="home">
+			<div class="header-banner">
+				<div class="header-title">
+					<h1 class="home-title">Choose to be well</h1>
+					<h1 class="home-title-mobile">Choose to be<br>well</h1>
+					<hr class="header-horizontal-line">
+					<a href="services.html" class="start-today-btn">Start today</a>
 				</div>
-			</section>
-		</header>
-		<main class="home-grid center-content">
-			<div class="home-grid-primary-column">
-				<p class="second-title">D’Anthony Harris</p>
-				<p class="subtitle">Mental Health Therapist</p>
+				
 			</div>
-			<div class="home-grid-secondary-column">
-				<img src="images/landing_page_icon.png" class="home-icons">
-				<p class="specialties">Individual<br>Therapy</p>
-			</div>
-			<div class="home-grid-secondary-column">
-				<img src="images/landing_page_icon.png" class="home-icons">
-				<p class="specialties">Couples<br>Counseling</p>
-			</div>
-			<div class="home-grid-secondary-column">
-				<img src="images/landing_page_icon.png" class="home-icons">
-				<p class="specialties">Family<br>Therapy</p>
-			</div>
-		</main>
-		<footer> 
-			<div class="footer-background">
-				<div class="footer-grid center-content">
-					<div class="contact-column">
-						<p class="footer-title">Contact</p>
-						<p class="footer-text">D’Anthony Harris<br>111.111.1111</p>
-						<p class="footer-text">danthony@interlinked.com</p>
-					</div>
-					<div class="address-column">
-						<p class="footer-title">Address</p>
-						<p class="footer-text">1111 Sample St.<br>City, St 00000</p>
-					</div>
-					<div class="follow-column">
-						<p class="footer-title">Follow us</p>
-						<a href=" " class="footer-icon footer-link facebook-icon"><i class="fab fa-facebook-f"></i></a>
-						<a href=" " class="footer-icon footer-link"><i class="fab fa-linkedin-in"></i></a>
-						<a href=" " class="footer-icon footer-link"><i class="fab fa-instagram"></i></a>
-					</div>
+		</section>
+	</header>
+	<main class="home-grid center-content">
+		<div class="home-grid-primary-column">
+			<p class="second-title">D’Anthony Harris</p>
+			<p class="subtitle">Mental Health Therapist</p>
+		</div>
+		<div class="home-grid-secondary-column">
+			<img src="images/landing_page_icon.png" class="home-icons">
+			<p class="specialties">Individual<br>Therapy</p>
+		</div>
+		<div class="home-grid-secondary-column">
+			<img src="images/landing_page_icon.png" class="home-icons">
+			<p class="specialties">Couples<br>Counseling</p>
+		</div>
+		<div class="home-grid-secondary-column">
+			<img src="images/landing_page_icon.png" class="home-icons">
+			<p class="specialties">Family<br>Therapy</p>
+		</div>
+	</main>
+	<footer> 
+		<div class="footer-background">
+			<div class="footer-grid center-content">
+				<div class="contact-column">
+					<p class="footer-title">Contact</p>
+					<p class="footer-text">D’Anthony Harris<br>(561) 331-0938</p>
+					<p class="footer-text">interlinkedcounseling@gmail.com</p>
+				</div>
+				<div class="address-column">
+					<p class="footer-title">Address</p>
+					<p class="footer-text">79 Green Street<br>Warner Robins, GA 31093</p>
+				</div>
+				<div class="follow-column">
+					<p class="footer-title">Follow us</p>
+					<a href=" " class="footer-icon footer-link facebook-icon"><i class="fab fa-facebook-f"></i></a>
+					<a href=" " class="footer-icon footer-link"><i class="fab fa-linkedin-in"></i></a>
+					<a href=" " class="footer-icon footer-link"><i class="fab fa-instagram"></i></a>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 </body>
+
+
+<script>
+		$(document).ready(function(){
+
+			$(window).scroll(function(){
+				if($(window).scrollTop()>20){
+					$('#navbar').removeClass('navbar-transparent').addClass('navbar-grey');
+					$('#mobile-navbar').removeClass('navbar-transparent').addClass('navbar-grey');
+				}else{
+					$('#navbar').removeClass('navbar-grey').addClass('navbar-transparent');
+					$('#mobile-navbar').removeClass('navbar-grey').addClass('navbar-transparent');
+				}
+
+			})
+
+
+		});
+	</script>

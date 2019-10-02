@@ -26,19 +26,28 @@
 	color: #3F3F3F;
 }
 
+/*-----Map-----*/
+
 .contact-map {
 	margin: 0 8% 10% 8%;
-	border-style: solid;
-	padding: 24%;
+  position: relative;
+  height: 579px !important;
+  overflow: hidden;
 }
-
+.contact-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
 
 @media screen and (min-width: 1600px) {
 	.contact-header-title-grid {
 		margin: auto;
 	}
 	.contact-map {
-		margin: 0 auto 10% auto;
+		margin: 0 15% 10% 15%;
 	}
 	.contact-grid-column1 {
 		font-size: 23px;
@@ -46,7 +55,6 @@
 	.contact-grid-column2 {
 		font-size: 23px;
 	}
-
 }
 @media screen and (max-width: 767px) and (min-width: 320px) {
 	.contact-header-title-grid {
@@ -63,7 +71,6 @@
 	}
 	.contact-map {
     margin: 0 0 20% 0;
+    height: 285px !important;
 	}
-
-
 }

@@ -6,8 +6,6 @@ html {
 	box-sizing: inherit;
 }
 
-
-
 /*----- Home -----*/
 body {
 	margin: 0;
@@ -38,7 +36,6 @@ body {
 	padding-bottom: 27%;
 	overflow: auto;
 	text-align: center;
-
 }
 .header-title {
 	padding-top: 10%;
@@ -68,6 +65,7 @@ body {
 	border-width: 1px;
 	border-radius: 3px;
 	box-shadow: 0px 0px 50px #fff inset;
+	transition: all 0.6s ease;
 }
 
 /*------Main Section-----*/
@@ -107,16 +105,6 @@ body {
 
 
 /*Widescreen*/
-@media only screen and (min-width: 1440px) {
-/*  #center-content {
-	 	max-width: 1500px;
-		align-content: center;
-	}
-	.header-banner {
-		padding-top: 16%;
-	}*/
-}
-
 @media only screen and (min-width: 1600px) {
   .center-content {
 	 	max-width: 1500px;
@@ -193,7 +181,6 @@ body {
 }
 
 @media screen and (max-width: 599px) and (min-width: 320px) {
-
 	.home {
 		background: url("../images/landing_page_banner_mobile.jpg") no-repeat scroll;
 		background-size: 100% 100%;

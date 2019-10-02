@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Interlinked | Helpful Resources</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Source+Serif+Pro:400,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles/home.css">
@@ -18,74 +19,90 @@
 
 <body>
 	<div id="center-content">
-		<nav class="navbar">
-			<a href="about.html" class="navbar-text">About</a>
-			<a href="services.html" class="navbar-text">Services/Fees</a>
-			<a id="home-btn" href="index.html" class="navbar-text"><img src="images/interlinked_logo.png" class="logo-img-navbar"></a>
-			<a href="contact.html" class="navbar-text">Contact</a>
-			<a href="resources.html" class="navbar-text">Resources</a>
-		</nav>
+		<nav class="navbar navbar-transparent" id="navbar">
+		<a href="about.html" class="navbar-text">About</a>
+		<a href="services.html" class="navbar-text">Services/Fees</a>
+		<a id="home-btn" href="index.html" class="navbar-text"><img src="images/interlinked_logo.png" class="logo-img-navbar"></a>
+		<a href="contact.html" class="navbar-text">Contact</a>
+		<a href="resources.html" class="navbar-text">Resources</a>
+	</nav>
 
-		<nav class="navbar-mobile">
-			<div class="dropdown">
-		    <button class="dropbtn">
-		      <i class="dropdown-icon fas fa-bars"></i>
-		    </button>
-		    <div class="dropdown-content">
-		      <a href="about.html" class="navbar-mobile-text">About</a>
-		      <a href="services.html" class="navbar-mobile-text">Services/Fees</a>
-		      <a href="contact.html" class="navbar-mobile-text">Contact</a>
-		      <a href="resources.html" class="navbar-mobile-text">Resources</a>
-		    </div>
-		  </div>
-		  <div class="home-btn"> 
-				<a href="index.html"><img src="images/interlinked_logo.png" class="logo-img-navbar-mobile"></a>
+	<nav class="navbar-mobile navbar-transparent" id="mobile-navbar">
+		<div class="dropdown">
+	    <button class="dropbtn">
+	      <i class="dropdown-icon fas fa-bars"></i>
+	    </button>
+	    <div class="dropdown-content">
+	      <a href="about.html" class="navbar-mobile-text">About</a>
+	      <a href="services.html" class="navbar-mobile-text">Services/Fees</a>
+	      <a href="contact.html" class="navbar-mobile-text">Contact</a>
+	      <a href="resources.html" class="navbar-mobile-text">Resources</a>
+	    </div>
+	  </div>
+	  <div class="home-btn"> 
+			<a href="index.html"><img src="images/interlinked_logo.png" class="logo-img-navbar-mobile"></a>
+		</div>
+		<div> 
+		</div>
+	</nav>
+
+	<main>
+		<section id="resources" class="resources">
+			<div class="main-title">
+				<h1 class="main-title-text">Helpful Resources</h1>
 			</div>
-			<div> 
-			</div>
-		</nav>
-
-
-		<main>
-			<section id="resources" class="resources">
-				<div class="main-title">
-					<h1 class="main-title-text">Helpful Resources</h1>
-				</div>
-			</section>
-			<div class="resources-header-grid center-content">
-				<div>
-					<p class="resources-grid-title">National Suicide Prevention Lifeline</p>
-					<p class="resources-grid-text">1-800-273-8255 (TALK)</p>
-				</div>
-				<div>
-					<p class="resources-grid-title">Veterans Crisis Line</p>
-					<p class="resources-grid-text">1-800-273-8255. Press 1.</p>
-				</div>
+		</section>
+		<div class="resources-header-grid center-content">
+			<div>
+				<p class="resources-grid-title">National Suicide Prevention Lifeline</p>
+				<p class="resources-grid-text">1-800-273-8255 (TALK)</p>
 			</div>
 			<div>
-				<p class="resources-alert-box center-content">For all emergencies during nonbusiness<br>please call 911</p>
+				<p class="resources-grid-title">Veterans Crisis Line</p>
+				<p class="resources-grid-text">1-800-273-8255. Press 1.</p>
 			</div>
-		</main>
-		<footer> 
-			<div class="footer-background">
-				<div class="footer-grid center-content">
-					<div class="contact-column">
-						<p class="footer-title">Contact</p>
-						<p class="footer-text">D’Anthony Harris<br>111.111.1111</p>
-						<p class="footer-text">danthony@interlinked.com</p>
-					</div>
-					<div class="address-column">
-						<p class="footer-title">Address</p>
-						<p class="footer-text">1111 Sample St.<br>City, St 00000</p>
-					</div>
-					<div class="follow-column">
-						<p class="footer-title">Follow us</p>
-						<a href=" " class="footer-icon footer-link facebook-icon"><i class="fab fa-facebook-f"></i></a>
-						<a href=" " class="footer-icon footer-link"><i class="fab fa-linkedin-in"></i></a>
-						<a href=" " class="footer-icon footer-link"><i class="fab fa-instagram"></i></a>
-					</div>
+		</div>
+		<div>
+			<p class="resources-alert-box center-content">For all emergencies during nonbusiness<br>please call 911</p>
+		</div>
+	</main>
+	<footer> 
+		<div class="footer-background">
+			<div class="footer-grid center-content">
+				<div class="contact-column">
+					<p class="footer-title">Contact</p>
+					<p class="footer-text">D’Anthony Harris<br>(561) 331-0938</p>
+					<p class="footer-text">interlinkedcounseling@gmail.com</p>
+				</div>
+				<div class="address-column">
+					<p class="footer-title">Address</p>
+					<p class="footer-text">79 Green Street<br>Warner Robins, GA 31093</p>
+				</div>
+				<div class="follow-column">
+					<p class="footer-title">Follow us</p>
+					<a href=" " class="footer-icon footer-link facebook-icon"><i class="fab fa-facebook-f"></i></a>
+					<a href=" " class="footer-icon footer-link"><i class="fab fa-linkedin-in"></i></a>
+					<a href=" " class="footer-icon footer-link"><i class="fab fa-instagram"></i></a>
 				</div>
 			</div>
-		</footer>
-	</div>
+		</div>
+	</footer>
 </body>
+
+
+<script>
+		$(document).ready(function(){
+
+			$(window).scroll(function(){
+				if($(window).scrollTop()>20){
+					$('#navbar').removeClass('navbar-transparent').addClass('navbar-grey');
+					$('#mobile-navbar').removeClass('navbar-transparent').addClass('navbar-grey');
+				}else{
+					$('#navbar').removeClass('navbar-grey').addClass('navbar-transparent');
+					$('#mobile-navbar').removeClass('navbar-grey').addClass('navbar-transparent');
+				}
+
+			})
+
+		});
+	</script>
