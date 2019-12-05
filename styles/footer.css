@@ -36,8 +36,8 @@
 	font-size: 25px;
 	padding: 15px;
 }
-.facebook-icon {
-	font-size: 24px;
+.psychology-today-icon {
+	width: 35%;
 	padding-top: 0;
 }
 .footer-link:hover {
@@ -46,11 +46,6 @@
 
 /*-----Media Queries-----*/
 
-
-/*Widescreen*/
-@media only screen and (min-width: 1440px) {
-
-}
 
 @media only screen and (min-width: 1600px) {
 	.footer-title {
@@ -68,7 +63,6 @@
 }
 @media screen and (max-width: 900px) and (min-width: 600px) {
 	.footer-grid {
-		grid-template-columns: 35% 30% 34%;
 		padding: 5% 0 5% 0;
 	}
 
@@ -79,6 +73,9 @@
 	.footer-text {
 		font-size: 14px;
 		line-height: 24px;
+	}
+	.psychology-today-icon {
+		width: 50%;
 	}
 
 

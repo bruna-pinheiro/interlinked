@@ -17,8 +17,9 @@ body {
   top: 0;
   left: 0;
   right: 0;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
+	position: relative;
 }
 .home-title {
 	color: #fff;
@@ -32,14 +33,15 @@ body {
 	display: none;
 }
 .header-banner {
-	padding-top: 20%;
-	padding-bottom: 27%;
 	overflow: auto;
 	text-align: center;
 }
 .header-title {
-	padding-top: 10%;
-	padding-bottom: 2%;
+	position: absolute;
+	bottom: 50%;
+	margin-bottom: -100px;
+	left: 50%;
+	margin-left: -300px;
 }
 .header-horizontal-line {
 	color: white;
@@ -137,10 +139,9 @@ body {
 	.home {
 		background: url("../images/landing_page_banner_tablet.jpg") no-repeat scroll;
 		background-size: 100% 100%;
+		position: relative;
 	}
 	.header-banner {
-		padding-top: 4%;
-		padding-bottom: 9%;
 	}
  	.home-title {
 		font-size: 32px;
@@ -150,8 +151,11 @@ body {
 		padding: 8px 45px;
 	}
 	.header-title {
-		padding-top: 280px;
-    margin: 0 100px 230px 100px;
+		position: absolute;
+		bottom: 50%;
+		margin-bottom: -74px;
+		left: 50%;
+		margin-left: -203px;
 	} 
 	.header-horizontal-line {
 		width: 400px;
@@ -186,9 +190,14 @@ body {
 		background-size: 100% 100%;
 	}
 	.header-banner {
-		padding-top: 53%;
-		padding-bottom: 59%;
 	}
+	.header-title {
+		position: absolute;
+		bottom: 50%;
+		margin-bottom: -95px;
+		left: 50%;
+		margin-left: -138px;
+	} 
 	.home-grid {
 		display: grid;
 		grid-template-columns: 100%;
